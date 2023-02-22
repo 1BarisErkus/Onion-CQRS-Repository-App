@@ -10,6 +10,6 @@ namespace EnocaChallengeApp.Application.Features.Commands.Delete.DeleteFirm
 {
     public class DeleteFirmCommand : IRequest<ServiceResponse<int>>
     {
-        public int Id { get; set; }
+        public int Id { get; set; } = -1;
     }
 }

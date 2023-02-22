@@ -12,8 +12,8 @@ namespace EnocaChallengeApp.Application.Features.Commands.Creates.CreateFirm
 {
     public class CreateFirmCommand : IRequest<ServiceResponse<int>>
     {
-        public string FirmName { get; set; }
-        public int ApprovelStatus { get; set; }
+        public string FirmName { get; set; } = "";
+        public int ApprovelStatus { get; set; } = -1; 
         public DateTime OrderClearanceStartTime { get; set; }
         public DateTime OrderClearanceFinishTime { get; set; }
     }

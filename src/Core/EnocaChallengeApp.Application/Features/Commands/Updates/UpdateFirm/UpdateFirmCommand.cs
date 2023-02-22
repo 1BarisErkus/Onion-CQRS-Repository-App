@@ -12,9 +12,9 @@ namespace EnocaChallengeApp.Application.Features.Commands.Updates.UpdateFirm
 {
     public class UpdateFirmCommand : IRequest<ServiceResponse<FirmViewDto>>
     {
-        public int Id { get; set; }
-        public string FirmName { get; set; }
-        public int ApprovelStatus { get; set; }
+        public int Id { get; set; } = -1;
+        public string FirmName { get; set; } = "";
+        public int ApprovelStatus { get; set; } = -1;
         public DateTime OrderClearanceStartTime { get; set; }
         public DateTime OrderClearanceFinishTime { get; set; }
     }

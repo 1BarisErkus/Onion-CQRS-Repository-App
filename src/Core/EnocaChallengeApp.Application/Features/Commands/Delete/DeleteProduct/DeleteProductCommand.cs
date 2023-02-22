@@ -10,6 +10,6 @@ namespace EnocaChallengeApp.Application.Features.Commands.Delete.DeleteProduct
 {
     public class DeleteProductCommand : IRequest<ServiceResponse<int>>
     {
-        public int Id { get; set; }
+        public int Id { get; set; } = -1;
     }
 }

@@ -11,10 +11,10 @@ namespace EnocaChallengeApp.Application.Features.Commands.Updates.UpdateOrder
 {
     public class UpdateOrderCommand : IRequest<ServiceResponse<OrderViewDto>>
     {
-        public int Id { get; set; }
-        public int FirmId { get; set; }
-        public int ProductId { get; set; }
-        public string CustomerName { get; set; }
+        public int Id { get; set; } = -1; 
+        public int FirmId { get; set; } = -1;
+        public int ProductId { get; set; } = -1;
+        public string CustomerName { get; set; } = "";
         public DateTime Date_ { get; set; }
     }
 }

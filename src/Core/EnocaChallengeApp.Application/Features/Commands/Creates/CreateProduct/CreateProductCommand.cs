@@ -10,8 +10,8 @@ namespace EnocaChallengeApp.Application.Features.Commands.Creates.CreateProduct
 {
     public class CreateProductCommand : IRequest<ServiceResponse<int>>
     {
-        public int FirmId { get; set; }
-        public string ProductName { get; set; }
-        public int Price { get; set; }
+        public int FirmId { get; set; } = -1;
+        public string ProductName { get; set; } = "";
+        public int Price { get; set; } = -1;
     }
 }

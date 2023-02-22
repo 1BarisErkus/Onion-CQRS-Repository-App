@@ -11,9 +11,9 @@ namespace EnocaChallengeApp.Application.Features.Commands.Updates.UpdateProduct
 {
     public class UpdateProductCommand : IRequest<ServiceResponse<ProductViewDto>>
     {
-        public int Id { get; set; }
-        public int FirmId { get; set; }
-        public string ProductName { get; set; }
-        public int Price { get; set; }
+        public int Id { get; set; } = -1;
+        public int FirmId { get; set; } = -1;
+        public string ProductName { get; set; } = "";
+        public int Price { get; set; } = -1;
     }
 }

@@ -8,8 +8,9 @@ namespace EnocaChallengeApp.Application.Dtos
 {
     public class FirmViewDto
     {
-        public int Id { get; set; }
         public string FirmName { get; set; }
         public int ApprovelStatus { get; set; }
+        public DateTime OrderClearanceStartTime { get; set; }
+        public DateTime OrderClearanceFinishTime { get; set; }
     }
 }
