@@ -16,7 +16,7 @@ namespace EnocaChallengeApp.Persistance.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost; Database=EnocaChallengeDb; uid=sa; pwd=123; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=localhost; Database=AppDb; uid=sa; pwd=123; TrustServerCertificate=True");
         }
     }
 }
